@@ -27,11 +27,11 @@ int main(){
     }
 
     printf("[ ");
-    for (int i = 0; i < N; i++)
+    for (int i = 0; i < N - 1; i++)
     {
         printf("%d, ", arr_iniziale[i]);
     }
-    printf("%d ", arr_iniziale[N -1]);
+    printf("%d ", arr_iniziale[N - 1]);
     printf("]\n");
 
     for (int i = 0; i < N; i++)
@@ -57,11 +57,11 @@ int main(){
     }
 
     printf("[ ");
-    for (int i = 0; i < N; i++)
+    for (int i = 0; i < N - 1; i++)
     {
         printf("%d, ", arr_prodotti[i]);
     }
-    printf("%d ", arr_prodotti[N -1]);
+    printf("%d ", arr_prodotti[N - 1]);
     printf("]\n");
     
 
