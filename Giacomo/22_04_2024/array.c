@@ -4,7 +4,8 @@ int my_len(int*);
 
 int main(){
 
-    int arr[] = {1, 2, 3, 4, 5};
+    int arr[5] = {1, 2, 3, 4, 5};
+    //int arr2[4];
 
     /* 
     + sizeof(arr) -> restituisce la dimensione dell'array in byte
