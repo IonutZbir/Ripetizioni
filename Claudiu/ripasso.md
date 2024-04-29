@@ -11,16 +11,12 @@ Le ACL sono fondamentali per la sicurezza di rete, dato che permetteno di filtra
 
 **Funzionalità**
 
-1. Filtraggio dei pacchetti. Esamina il traffico di rete in entrata e in uscita e applica le regole per bloccare il traffico non desiderato. Quindi blocca i pacchetti che sono stati dichiarati nelle regole (ACL ).
-
-
-
-2. NAT
-3. VPN
-4. Logging
-
+1. Filtraggio dei pacchetti. Esamina il traffico di rete in entrata e in uscita e applica le regole per bloccare il traffico non desiderato. Quindi blocca i pacchetti che sono stati dichiarati nelle regole (ACL).
+2. NAT (Network Address Translation). Traduce gli indirizzi IP privati della rete interna in un singolo indirizzo IP pubblico, nascondendo la struttura della rete interna e consentendo a più dispositivi di utilizzare una singola connessione Internet.
 
 # DMZ
+
+Una DMZ, o zona demilitarizzata, è una rete separata e protetta che si trova tra una rete interna privata e una rete esterna, come Internet. È progettata per ospitare servizi e risorse accessibili pubblicamente, come server web o server di posta elettronica, allo stesso tempo proteggendo la rete interna da potenziali minacce provenienti dall'esterno.
 
 # Proxy
 
