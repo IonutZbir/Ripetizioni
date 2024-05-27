@@ -4,7 +4,8 @@
 
 #define N 10
 
-int main(){
+int main()
+{
 
     srand(time(NULL));
 
@@ -14,7 +15,8 @@ int main(){
     PUNTO A
     */
     a[N - 1] = rand() % 4;
-    for(i = N - 2; i >= 0; i--){
+    for (i = N - 2; i >= 0; i--)
+    {
         a[i] = rand() % (a[i + 1] + 3) + a[i + 1];
     }
 
@@ -24,19 +26,23 @@ int main(){
     printf("Inserire un valore in [3, 4]\n");
     scanf("%d", &h);
 
-    for(i = 0; i < h; i++){
+    for (i = 0; i < h; i++)
+    {
         b[i] = rand() % a[0] + a[N - 1];
     }
 
-    while(i < N){
+    while (i < N)
+    {
         trovato = 0;
         n = rand() % a[0] + a[N - 1];
         j = 0;
-        for(j = 0; j < h; j++){
-            if(b[j] == n)
+        for (j = 0; j < h; j++)
+        {
+            if (b[j] == n)
                 trovato = 1;
         }
-        if(!trovato){
+        if (!trovato)
+        {
             b[i] = n;
             i++;
         }
@@ -45,12 +51,15 @@ int main(){
     /*
     PUNTO C
     */
-    for (i = 0; i < N - 1; i++) {
-        for (j = 0; j < N-i-1; j++) {
-            if (b[j] < b[j+1]) {
+    for (i = 0; i < N - 1; i++)
+    {
+        for (j = 0; j < N - i - 1; j++)
+        {
+            if (b[j] < b[j + 1])
+            {
                 temp = b[j];
-                b[j] = b[j+1];
-                b[j+1] = temp;
+                b[j] = b[j + 1];
+                b[j + 1] = temp;
             }
         }
     }
@@ -59,13 +68,15 @@ int main(){
     PUNTO D
     */
     printf("a[%d] = [", N);
-    for(i = 0; i < N - 1; i++){
+    for (i = 0; i < N - 1; i++)
+    {
         printf("%d\t, ", a[i]);
     }
     printf("%d\t]\n", a[N - 1]);
 
     printf("b[%d] = [", N);
-    for(i = 0; i < N - 1; i++){
+    for (i = 0; i < N - 1; i++)
+    {
         printf("%d\t, ", b[i]);
     }
     printf("%d\t]\n", b[N - 1]);
@@ -74,13 +85,16 @@ int main(){
     PUNTO E
     */
     printf("         ");
-    for(i = 0; i < N; i++){
-        if(a[i] == b[i]){
+    for (i = 0; i < N; i++)
+    {
+        if (a[i] == b[i])
+        {
             printf("  *\t");
-        }else{
+        }
+        else
+        {
             printf(" \t");
         }
     }
     printf("\n");
-
 }
